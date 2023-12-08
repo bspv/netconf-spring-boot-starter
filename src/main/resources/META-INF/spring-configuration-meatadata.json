@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "netconf",
+      "type": "com.bazzi.netconf.config.NetConfProperties",
+      "sourceType": "com.bazzi.netconf.config.NetConfProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "netconf.path",
+      "type": "java.lang.String",
+      "description": "yang文件本地存放目录",
+      "sourceType": "com.bazzi.netconf.config.NetConfProperties"
+    },
+    {
+      "name": "netconf.loadOnStartup",
+      "type": "java.lang.Boolean",
+      "description": "启动时是否加载并解析yang文件",
+      "sourceType": "com.bazzi.netconf.config.NetConfProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": [
+    {
+      "name": "netconf.loadOnStartup",
+      "values": [
+        {
+          "value": true,
+          "description": "启用-项目启动时加载并解析yang文件"
+        },
+        {
+          "value": false,
+          "description": "禁用-项目启动时不加载并解析yang文件"
+        }
+      ]
+    }
+  ]
+}
