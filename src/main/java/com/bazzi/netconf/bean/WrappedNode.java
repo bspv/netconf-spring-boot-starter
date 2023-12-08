@@ -1,11 +1,10 @@
 package com.bazzi.netconf.bean;
 
+import com.bazzi.netconf.util.StringUtil;
 import com.cisco.stbarth.netconf.anc.Netconf;
 import com.cisco.stbarth.netconf.anc.XMLElement;
-import com.visionvera.netconf.util.StringUtil;
 import org.opendaylight.yangtools.yang.common.QName;
 import org.opendaylight.yangtools.yang.model.api.*;
-import org.opendaylight.yangtools.yang.model.api.Module;
 
 import java.util.*;
 import java.util.stream.Collectors;
